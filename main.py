@@ -12,11 +12,11 @@ def main():
 
     # Генерация config.xml
     config_generator = XMLConfigGenerator(parser.classes)
-    config_generator.save('config.xml')
+    config_generator.save('./out/config.xml')
 
     # Генерация meta.json
     meta_generator = MetaJSONGenerator(parser.classes)
-    meta_generator.save('meta.json')
+    meta_generator.save('./out/meta.json')
 
 
 if __name__ == '__main__':
